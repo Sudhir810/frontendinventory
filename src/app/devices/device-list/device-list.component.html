@@ -1,0 +1,9 @@
+<div class="row">
+    <h2>Click on the device to view details.</h2>
+</div>
+<div class="row">
+  <app-deviceitem *ngFor="let device of devices; let i = index"
+    [deviceElement]= 'device'
+    [index]= "i" >
+  </app-deviceitem>
+</div>

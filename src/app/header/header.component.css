@@ -1,0 +1,16 @@
+.navbar {
+  color: #white;
+}
+.navbar a:hover{
+  color: rgb(239, 91, 37);
+  cursor: pointer;
+}
+.navbar-brand{
+  color: rgb(239, 91, 37);
+  float:none;
+}
+.navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+}

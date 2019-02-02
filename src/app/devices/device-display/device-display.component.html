@@ -1,0 +1,24 @@
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content" *ngIf="deviceElement">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">{{deviceElement.name}}</h4>
+      </div>
+
+      <div class="modal-body">
+        <p>Last borrowed by:-</p>
+        <p>Name:{{deviceElement.lastBorrowedBy.name}} Mid: {{deviceElement.lastBorrowedBy.mid}}</p>
+        <p>Returned at:- Date: {{myDate}} Time: {{myTime}}</p>
+        <p>Comments: {{deviceElement.comments}}</p>
+      </div>
+
+      <div class="modal-footer">
+        <p style="float:left;"*ngIf="deviceElement.everythingIntact">Device box is intact.<span class="dot"></span></p>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<h4>Live Wall: devices team is currently working on</h4>
+<div class="col-md-12 column">
+  <ul>
+    <li *ngFor="let user of borrowedDevices">{{user.user.name}}
+      <ul class="nested">
+        <div *ngFor="let device of user.borrow">
+          <li *ngIf="device.returned == null">{{device.device.name}}</li>
+        </div>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!-- <div class="col-md-12 column">
+  <ul id="myUL">
+    <li *ngFor="let user of borrowedDevices">
+      <span class="caret">{{user.user.name}}</span>
+      <ul class="nested">
+        <div *ngFor="let device of user.borrow">
+          <li *ngIf="device.returned == null">{{device.device.name}}</li>
+        </div>
+      </ul>
+    </li>
+  </ul>
+</div> -->
